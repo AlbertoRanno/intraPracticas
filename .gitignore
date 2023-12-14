@@ -1,0 +1,18 @@
+# Java
+*.class
+*.jar
+.vscode/
+.idea/
+
+# Spring Boot
+target/
+bin/
+logs/
+.settings/
+.project
+
+# Docker
+.docker/
+
+# React / JS (añadir si es necesario)
+node_modules/
