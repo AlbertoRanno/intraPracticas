@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class IntraV0 {
 
+    //psvm + tab:
     public static void main(String[] args) {
         /*PascalCase - NombresClases
         camelCase - nombresVariables*/
@@ -108,9 +109,7 @@ public class IntraV0 {
         Solo puede comparar valores discretos específicos.
          Para comparar intervalos de valores decimales, 
         necesito utilizar una estructura de control como if-else. */
-        
         //Seccion 6 (Sentencias de Control) - Video 39 de 788
-        
         var contadorWhile = 0;
         var contadorDo = 0;
 
@@ -126,11 +125,22 @@ public class IntraV0 {
 
         for (int i = 1; i < 4; i++) {
             System.out.println("i = " + i);
-             if (i % 2 == 0) {                
+            if (i % 2 == 0) {
                 break; //una vez que encuentra el primer numero par, sale del ciclo
             }
         }
 
         //Seccion 7 (Ciclos) - Video 44 de 788
+        /*Basicamente una clase es una plantilla, un molde, que sirve para crear objetos.
+        Posee un nombre, atributos y metodos.
+        
+        Un objeto, es una instancia de una clase. Y va a tener valores
+        
+        Un paquete es un carpeta, donde voy a ordenar las clases.
+        Por lo tanto, las clases se crean dentro de ellos.
+        Si no especifico ningun nombre de paquete, entonces las clases se depositan en "default package", 
+        el cual NO es recomendable usar.
+        
+        Creo la clase RegistroUsuario en el mismo paquete, y sigo allí*/
     }
 }
