@@ -47,5 +47,15 @@ class PruebaEmpleado {
         Creé dicho método, lo llamo utilizando lista ya creada: */
         Empleado.reporteEmpleadoLista(listaEmpleados);
 
+        System.out.println("Efvo por Hs Extras: $" + empleado2.calculoHsExtrasEnNegro(10));
+
+        empleado3.registrarHorasAcumuladas(2, LocalDate.of(2022, 7, 29));
+        empleado3.registrarHorasAcumuladas(2, LocalDate.of(2022, 7, 30));
+        empleado3.registrarHorasAcumuladas(3, LocalDate.of(2022, 8, 1));
+        empleado3.registrarHorasAcumuladas(3, LocalDate.of(2022, 8, 3));
+        empleado3.mostrarInfo();
+        empleado3.setMail("aranno@cdt.com");
+        System.out.println("Mail: " + empleado3.getMail());
+
     }
 }
