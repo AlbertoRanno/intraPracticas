@@ -2,6 +2,8 @@ package Practicas;
 
 import java.time.LocalDate; //Del paquete "Java.time", la clase LocalDate para manejar las fechas
 //import java.time.format.DateTimeFormatter; //Para formatear la fecha... 
+import java.util.ArrayList; //Quiero trabajar con una lista de arrays para el reporte general
+import java.util.List;
 
 public class Empleado {
 
@@ -35,9 +37,18 @@ public class Empleado {
     public int registrarHorasTrabajadas(int cantidadHsTrabajadas) {
         return this.cantidadHsTrabajadas = cantidadHsTrabajadas;
     }
-    
-    public String reporteHoras(){
-    return //continuar....
-    } 
+
+    public String reporteEmpleado() {
+        return "Nombre: " + this.nombre + "\nSueldo: " + this.sueldo + "\nFecha de ingreso: "
+                + this.fechaIngreso + "\nCantidad de horas trabajadas: " + this.cantidadHsTrabajadas;
+    }
+
+    //Reporte, recibiendo una lista como parámetro:
+    public static void reporteEmpleadoLista(List<Empleado> empleados) {
+        System.out.println("Método reporte Empleado Lista");
+        for (Empleado empleado : empleados) {
+            System.out.println(empleado.reporteEmpleado());
+        }
+    }
 
 }

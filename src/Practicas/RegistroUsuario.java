@@ -2,7 +2,7 @@ package Practicas;
 
     //1-Nombre de la clase
 public class RegistroUsuario {
-    //SIN el psvm
+    //SIN el psvm (No se ejecutará)
 
     //2-Atributos:
     public String nombreUsuario;

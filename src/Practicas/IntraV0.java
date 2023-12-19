@@ -1,6 +1,8 @@
 package Practicas;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 public class IntraV0 {
 
@@ -141,6 +143,46 @@ public class IntraV0 {
         Si no especifico ningun nombre de paquete, entonces las clases se depositan en "default package", 
         el cual NO es recomendable usar.
         
-        Creo la clase RegistroUsuario en el mismo paquete, y sigo allí*/
+        Creo la clase RegistroUsuario en el mismo paquete, y sigo allí...
+        
+       
+        Tema Aparte... LISTAS - voy a aprovechar este metodo main para ver un ejemplo:
+        Creo lista de nros Enteros*/
+       // ArrayList<Integer> listaNrosEnteros = new ArrayList<>();
+        /* ArrayList<Integer>   Declara que se está creando una instancia de la clase ArrayList 
+                                que contendrá elementos del tipo Integer.
+        listaNrosEnteros        Es el nombre de la variable que representa la instancia recién creada de ArrayList
+        new ArrayList<>();      Crea una nueva instancia de la clase ArrayList. La parte <Integer> después 
+                                de ArrayList especifica el tipo de elementos que la lista contendrá.
+                                El <> dentro de los paréntesis angulares indica que estás utilizando 
+                                la inferencia de tipo de Java, lo que significa que no es necesario repetir el 
+                                tipo en este punto; el compilador lo deducirá automáticamente.*/
+        
+        List<Integer> listaNrosEnteros = new ArrayList<>();
+        //Posteriormente cambié el  ArrayList<Integer>, por List<Integer> porque:
+        /* En programación, es una buena práctica utilizar tipos de interfaz en lugar de tipos de implementación 
+        siempre que sea posible. List es una interfaz en Java, y ArrayList es una de las implementaciones 
+        concretas de esa interfaz. Al declarar una variable como List<Integer> listaNrosEnteros, estás indicando 
+        que listaNrosEnteros es de tipo List, lo que proporciona flexibilidad.*/
+       
+        //Los añado:
+        listaNrosEnteros.add(5);
+        listaNrosEnteros.add(15);
+        listaNrosEnteros.add(23);
+        //Accedo:
+        int primerNro = listaNrosEnteros.get(0);
+        System.out.println("primerNro = " + primerNro);
+        //Itero e imprimo todos:
+        System.out.println("Imprimo Lista");
+        for (int valorEnCadaIndice : listaNrosEnteros) {
+            System.out.println("numeroFor = " + valorEnCadaIndice);
+        }
+        /* Bucle for mejorado. La sintaxis general es for (tipo variable : colección), 
+        donde "tipo" es el tipo de elementos en la colección, "variable" es una variable
+        que representará cada elemento en la iteración, y "colección" es la colección que se está recorriendo.
+        
+        Muestro cantidad de elementos de la lista:*/
+        System.out.println("Cant. elementos de la lista: " + listaNrosEnteros.size());
+
     }
 }
