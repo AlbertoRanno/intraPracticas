@@ -148,7 +148,7 @@ public class IntraV0 {
        
         Tema Aparte... LISTAS - voy a aprovechar este metodo main para ver un ejemplo:
         Creo lista de nros Enteros*/
-       // ArrayList<Integer> listaNrosEnteros = new ArrayList<>();
+        // ArrayList<Integer> listaNrosEnteros = new ArrayList<>();
         /* ArrayList<Integer>   Declara que se está creando una instancia de la clase ArrayList 
                                 que contendrá elementos del tipo Integer.
         listaNrosEnteros        Es el nombre de la variable que representa la instancia recién creada de ArrayList
@@ -157,14 +157,13 @@ public class IntraV0 {
                                 El <> dentro de los paréntesis angulares indica que estás utilizando 
                                 la inferencia de tipo de Java, lo que significa que no es necesario repetir el 
                                 tipo en este punto; el compilador lo deducirá automáticamente.*/
-        
         List<Integer> listaNrosEnteros = new ArrayList<>();
         //Posteriormente cambié el  ArrayList<Integer>, por List<Integer> porque:
         /* En programación, es una buena práctica utilizar tipos de interfaz en lugar de tipos de implementación 
         siempre que sea posible. List es una interfaz en Java, y ArrayList es una de las implementaciones 
         concretas de esa interfaz. Al declarar una variable como List<Integer> listaNrosEnteros, estás indicando 
         que listaNrosEnteros es de tipo List, lo que proporciona flexibilidad.*/
-       
+
         //Los añado:
         listaNrosEnteros.add(5);
         listaNrosEnteros.add(15);
@@ -184,5 +183,62 @@ public class IntraV0 {
         Muestro cantidad de elementos de la lista:*/
         System.out.println("Cant. elementos de la lista: " + listaNrosEnteros.size());
 
+        /*Las Listas son el equivalente a los Arrays en JS:
+        
+        Los arrays son objetos que almacenan elementos de manera secuencial, y cada elemento
+        puede ser de cualquier tipo de dato, incluyendo números, cadenas, objetos, entre otros.
+        
+        En JavaScript:
+
+            // Declaración de un array en JavaScript
+            let miArray = [1, 2, 3, "cuatro", true];
+
+            // Acceso a elementos del array
+            console.log(miArray[0]); // Imprimirá 1
+            console.log(miArray.length); // Imprimirá la longitud del array
+
+            // Modificación de un elemento
+            miArray[1] = "dos";
+
+            // Añadir un elemento al final del array
+            miArray.push(5);
+
+            // Iterar sobre el array
+            for (let elemento of miArray) {
+              console.log(elemento);
+            }
+        
+        En Java:  */
+        // Declaración de una lista en Java
+        List<Object> miLista = new ArrayList<>();
+        miLista.add(1);
+        miLista.add(2);
+        miLista.add(3);
+        miLista.add("cuatro");
+        miLista.add(true);
+
+        // Acceso a elementos de la lista
+        System.out.println(miLista.get(0)); // Imprimirá 1
+        System.out.println(miLista.size()); // Imprimirá el tamaño de la lista
+
+        // Modificación de un elemento
+        miLista.set(1, "dos");
+
+        // Añadir un elemento al final de la lista
+        miLista.add(5);
+
+        // Iterar sobre la lista
+        for (Object elemento : miLista) {
+            System.out.println(elemento);
+        }
+
+        /*
+       Memoria Stack y Heap
+        Las variables locales:
+        -solo se guardan hasta que termina la ejecucion del metodo que las creo.
+        -se almacenan en la memoria Stack
+        Los objetos:
+        -permanecen en memoria hasta que termina la ejecucion del programa
+        -se almacenan en la memoria Heap  */
     }
 }
