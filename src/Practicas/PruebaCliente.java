@@ -22,6 +22,9 @@ public class PruebaCliente {
         //Creo distintos objetos, a los cuales les inicializo distintos atributos:
         Cliente cliente2 = new Cliente("Calle Falsa 123");
         Cliente cliente3 = new Cliente("Roberto", "Almodobar 234", "4369-6699");
+        System.out.println("cliente2 = " + cliente2);
+        System.out.println("cliente3 = " + cliente3);
+        
     }
     
 }

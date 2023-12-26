@@ -24,8 +24,8 @@ public class Cliente {
     misma cantidad y tipos. Por ejemplo, si hacia 2 constructores (nombre y dirección uno, y el otro
     telefono y domicilio) ambos constructores recibían 2 strings, por lo que el sistema no sabría como
     diferenciar cuando llaman a uno u otro, por lo que daba error. */
-    public Cliente( String domicilio) {
-       
+    public Cliente(String domicilio) {
+
         this.domicilio = domicilio;
         System.out.println("Se ejecutó el constructor con domicilio");
     }
@@ -51,6 +51,11 @@ public class Cliente {
 
     public String getDomicilio() {
         return this.domicilio;
+    }
+
+    public String toString() {
+        return "Cliente [nombre: " + this.nombre + ", dirección: " + this.direccion
+                + ", teléfono: " + this.telefono + ", domicilio: " + this.domicilio + "]";
     }
 
 }
