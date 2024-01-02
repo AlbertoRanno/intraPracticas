@@ -53,8 +53,9 @@ public class PruebaPersona {
         
     }
 
-    public int getContador() {
-        return contador;
+    public int getContador() { //metodo No estatico
+        imprimir(new Persona("Carlos")); //accedo a metodo estatico
+        return this.contador; //accedo a atributo no estatico
     }
 
     public void setContador(int contador) {
